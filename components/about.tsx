@@ -18,9 +18,9 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Welcome! I'm a Full Stack Developer driven by a passion for crafting{" "}
+        Welcome! I&apos;m a Full Stack Developer driven by a passion for crafting{" "}
         <span className="font-medium">seamless digital experiences</span>. With a Bachelor of Science 
-        in <span className="underline">computer science</span> from the <span className="underline">University of Florida</span>, I've honed 
+        in <span className="underline">computer science</span> from the <span className="underline">University of Florida</span>, I&apos;ve honed 
         my skills in several programming languages and technologies such as Java, C++, Javascript, NextJS, MongoDB, and AWS. Known for my 
         adaptability and teamwork skills, I excel in rapidly mastering new concepts and collaborating effectively towards projects of any size.
       </p>
@@ -28,7 +28,7 @@ export default function About() {
         With a keen eye for detail and a knack for problem-solving, I embrace challenges head on and consistently
         deliver <span className="font-medium">exceptional results</span>. As you explore my portfolio, 
         I invite you to witness firsthand my dedication to excellence and my passion for creating{" "}
-        <span className="underline">impactful digital solutions</span>. Let's connect and explore how we can collaborate to bring your projects to life!
+        <span className="underline">impactful digital solutions</span>. Let&apos;s connect and explore how we can collaborate to bring your projects to life!
       </p>
     </motion.section>
   );
