@@ -36,26 +36,26 @@ export const links = [
     {
       title: "Velez Express",
       description:
-        "I worked as a full-stack developer on this startup project .",
-      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+        "I worked as a full-stack developer on this startup company. This site used the Stripe API as an online payments gateway.",
+      tags: ["Next.js", "Typescript", "Tailwind", "Stripe"],
       imageUrl: velezExpress,
       href: 'https://www.velezexpressllc.com/'
     },
     {
       title: "JAV Cooling",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-      tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+        "I built a fully responsive website for an HVAC company. This site used TailwindCSS for styling and the Resend API for sending emails.",
+      tags: ["React", "Next.js", "Tailwind", "Resend API"],
       imageUrl: javCooling,
       href: 'https://www.javcooling.com/',
     },
     {
       title: "Portfolio Website",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+        "A sleek, animated, and fully responsive portfolio website to showcase my education, projects, and experience.",
+      tags: ["Next.js", "Tailwind", "Resend API", "Framer Motion"],
       imageUrl: portfolio,
-      href: 'https://www.leonardomaicelo.com/',
+      href: 'https://www.lmaicelo.com/',
     },
   ] as const;
 
@@ -95,16 +95,18 @@ export const links = [
     "React",
     "Next.js",
     "Node.js",
+    "Java",
+    "C++",
+    "C",
+    "C#",
     "Git",
     "Tailwind",
-    "Prisma",
+    "AWS",
     "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
+    "Matlab",
+    "SQL",
     "Express",
-    "PostgreSQL",
     "Python",
-    "Django",
+    "Headless UI",
     "Framer Motion",
   ] as const;

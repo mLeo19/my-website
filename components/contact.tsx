@@ -46,14 +46,14 @@ export default function Contact() {
         ref={formRef}
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          //const { data, error } = await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
 
-          //if (error) {
-            //toast.error(error);
-            //return;
-          //}
+          if (error) {
+            toast.error(error);
+            return;
+          }
 
-          //console.log(data)
+          console.log(data)
           console.log(formData)
           formRef.current?.reset()
           toast.success("Email sent successfully!");
