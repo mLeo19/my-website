@@ -48,8 +48,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Welcome! I&apos;m a <span className="font-bold">Full Stack Web Developer</span> with a background {" "}
-        in <span className="underline">Computer Science</span> from the <span className="italic">University of Florida</span>. Explore my portfolio to see how we can collaborate!
+        I&apos;m a <span className="font-bold">Full Stack Developer</span> based in South FL,{" "}
+        CS grad from the <span className="italic">University of Florida</span>.{" "}
+        I build websites and web apps for businesses — let&apos;s work together!
       </motion.h1>
       {/* Intro buttons */}
       <motion.div

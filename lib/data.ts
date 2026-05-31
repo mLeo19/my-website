@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import velezExpress from '@/public/velez-express.png'
 import javCooling from '@/public/jav-cooling.png'
+import httpServer from '@/public/http-server.png'
 import portfolio from '@/public/portfolio.png'
 import soft17 from '@/public/soft17.png'
 import musicGenerator from '@/public/music-generator.png'
@@ -36,12 +37,20 @@ export const links = [
 
   export const projectsData = [
     {
-      title: "Soft17",
+      title: "Velez Express",
       description:
-      "Blackjack trainer with a full game engine, Hi-Lo card counting, train mode with basic strategy hints, and persistent session management.",
-      tags: ["Next.js", "TypeScript", "Supabase", "Zustand", "Framer Motion", "Tailwind"],
-      imageUrl: soft17,
-      href: "https://blackjack-counting-omega.vercel.app/",
+        "Full-stack development for a startup company, integrating the Stripe API for secure online payments and the Resend API for email automation.",
+      tags: ["Next.js", "Typescript", "Tailwind", "Stripe"],
+      imageUrl: velezExpress,
+      href: 'https://www.velezexpressllc.com/'
+    },
+    {
+      title: "JAV Cooling",
+      description:
+        "Business website for an HVAC company, built with a responsive design and Resend API integration for customer contact forms.",
+      tags: ["Next.js", "React", "Tailwind", "Resend API"],
+      imageUrl: javCooling,
+      href: "https://jav-hvac.vercel.app",
     },
     {
       title: "AI Music Generator",
@@ -52,12 +61,20 @@ export const links = [
       href: "https://music-generator-frontend-beta.vercel.app/",
     },
     {
-      title: "Velez Express",
+      title: "Soft17",
       description:
-        "Full-stack development for a startup company, integrating the Stripe API for secure online payments and the Resend API for email automation.",
-      tags: ["Next.js", "Typescript", "Tailwind", "Stripe"],
-      imageUrl: velezExpress,
-      href: 'https://www.velezexpressllc.com/'
+      "Blackjack trainer with a full game engine, Hi-Lo card counting, train mode with basic strategy hints, and persistent session management.",
+      tags: ["Next.js", "TypeScript", "Supabase", "Zustand", "Framer Motion", "Tailwind"],
+      imageUrl: soft17,
+      href: "https://blackjack-counting-omega.vercel.app/",
+    },
+    {
+      title: "HTTP Server in C",
+      description:
+        "A functional HTTP server built from scratch in C with no external libraries — handles TCP connections, parses raw HTTP requests, and serves responses.",
+      tags: ["C", "TCP", "HTTP", "Systems Programming"],
+      imageUrl: httpServer,
+      href: "https://github.com/mLeo19/http-server",
     },
   ] as const;
 
