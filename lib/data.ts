@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import velezExpress from '@/public/velez-express.png'
 import javCooling from '@/public/jav-cooling.png'
 import portfolio from '@/public/portfolio.png'
+import soft17 from '@/public/soft17.png'
+import musicGenerator from '@/public/music-generator.png'
 export const links = [
     {
       name: "Home",
@@ -34,28 +36,28 @@ export const links = [
 
   export const projectsData = [
     {
+      title: "Soft17",
+      description:
+      "Blackjack trainer with a full game engine, Hi-Lo card counting, train mode with basic strategy hints, and persistent session management.",
+      tags: ["Next.js", "TypeScript", "Supabase", "Zustand", "Framer Motion", "Tailwind"],
+      imageUrl: soft17,
+      href: "https://blackjack-counting-omega.vercel.app/",
+    },
+    {
+      title: "AI Music Generator",
+      description:
+        "An AI-powered music generation platform where users generate original audio from text prompts using ACE-Step.",
+      tags: ["Next.js", "TypeScript", "Python", "Modal", "Prisma", "Neon Postgres"],
+      imageUrl: musicGenerator,
+      href: "https://music-generator-frontend-beta.vercel.app/",
+    },
+    {
       title: "Velez Express",
       description:
-        "I worked as a full-stack developer on this startup company. This site used the Stripe API as an online payments gateway.",
+        "Full-stack development for a startup company, integrating the Stripe API for secure online payments and the Resend API for email automation.",
       tags: ["Next.js", "Typescript", "Tailwind", "Stripe"],
       imageUrl: velezExpress,
       href: 'https://www.velezexpressllc.com/'
-    },
-    {
-      title: "JAV Cooling",
-      description:
-        "I built a fully responsive website for an HVAC company. This site used TailwindCSS for styling and the Resend API for sending emails.",
-      tags: ["React", "Next.js", "Tailwind", "Resend API"],
-      imageUrl: javCooling,
-      href: 'https://www.javcooling.com/',
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "A sleek, animated, and fully responsive portfolio website to showcase my education, projects, and experience.",
-      tags: ["Next.js", "Tailwind", "Resend API", "Framer Motion"],
-      imageUrl: portfolio,
-      href: 'https://www.lmaicelo.com/',
     },
   ] as const;
 
@@ -64,7 +66,7 @@ export const links = [
       title: "Research assistant",
       location: "Gainesville, FL",
       description:
-        "I worked in programming a vibration-producing algorithm for the improvement of hearing aids, which leveraged a neural network trained to denoise noisy environments.",
+        "Trained a neural network for audio extraction in noisy environments and developed an audio-to-haptic feedback algorithm using MATLAB and Arduino.",
       icon: React.createElement(CgWorkAlt),
       date: "2020 - 2021",
     },
@@ -72,7 +74,7 @@ export const links = [
       title: "Completed degree",
       location: "Gainesville, FL",
       description:
-        "I graduated with a Bachelor of Science in Computer Science from the University of Florida. I then began to do freelance web development.",
+        "Graduated with a Bachelor of Science in Computer Science from the University of Florida.",
       icon: React.createElement(LuGraduationCap),
       date: "2023",
     },
@@ -80,7 +82,7 @@ export const links = [
       title: "Full-Stack Developer",
       location: "West Palm Beach, FL",
       description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+        "Building and deploying full-stack applications independently, including an AI music generation platform and a blackjack card counting trainer. Open to full-time opportunities.",
       icon: React.createElement(FaReact),
       date: "2023 - present",
     },
@@ -102,11 +104,13 @@ export const links = [
     "Git",
     "Tailwind",
     "AWS",
-    "MongoDB",
-    "Matlab",
+    "Supabase",
+    "PostgreSQL",
+    "Prisma",
+    "Zustand",
+    "Framer Motion",
+    "Python",
     "SQL",
     "Express",
-    "Python",
-    "Headless UI",
-    "Framer Motion",
+    "Matlab",
   ] as const;
