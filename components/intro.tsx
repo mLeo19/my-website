@@ -78,7 +78,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.05 }}
       >
-        Your site should look like it belongs to your business, not a template, with design and details that feel professional and code underneath that's fast, secure, and built to hold up. Based in South FL, CS grad from the{" "}
+        Your site should look like it belongs to your business, not a template, with design and details that feel professional and code underneath that&apos;s fast, secure, and built to hold up. Based in South FL, CS grad from the{" "}
         <span className="italic">University of Florida</span>.
       </motion.p>
 
