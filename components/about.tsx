@@ -3,10 +3,16 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
+
+const stack = ["React", "Next.js", "TypeScript", "Python", "PostgreSQL", "AWS"];
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <motion.section
       ref={ref}
@@ -16,19 +22,46 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>
+        About <span className="text-emerald-500 dark:text-emerald-400">me</span>
+      </SectionHeading>
       <p className="mb-3">
-        I&apos;m a full stack developer based in South Florida, specializing in building 
-        websites and web apps for businesses. With a CS degree from the{" "}
-        <span className="underline">University of Florida</span> and hands-on experience 
-        delivering real projects for real clients, I bring both technical depth and practical results.
+        I&apos;m a freelance full stack developer who works with small businesses in South Florida
+        to build websites made specifically for them. I hold a Computer Science degree from the{" "}
+        <span className="underline decoration-emerald-500 decoration-2 underline-offset-2">
+          University of Florida
+        </span>{" "}
+        and have spent the time since working directly with clients on real projects.
       </p>
-      <p className="mb-3">
-        I work with React, Next.js, TypeScript, Node.js, PostgreSQL, and AWS — and I&apos;m 
-        comfortable going low-level when needed. I&apos;ve built everything from business websites 
-        with integrated payment solutions to an HTTP server in C from scratch. If you need 
-        something built right, <span className="font-medium">let&apos;s talk.</span>
+      <p className="mb-6">
+        My core stack is React, Next.js, Python, and TypeScript, though I&apos;m also comfortable
+        working closer to the metal when a project calls for it, including building an HTTP
+        server in C from scratch. If your business needs a website built well and built to last,
+        feel free to{" "}
+        <Link
+          href="#contact"
+          className="font-medium text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 underline decoration-emerald-500/40 decoration-2 underline-offset-2 transition-colors"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
+          reach out!
+        </Link>
+        .
       </p>
+
+      {/* Tech stack pills */}
+      <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
+        {stack.map((tech) => (
+          <span
+            key={tech}
+            className="px-3 py-1 text-sm font-medium border-2 border-emerald-500/30 text-emerald-700 bg-emerald-50 dark:border-emerald-400/30 dark:text-emerald-300 dark:bg-emerald-400/10 rounded-lg"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
     </motion.section>
   );
 }
