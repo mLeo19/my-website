@@ -7,8 +7,6 @@ import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-const stack = ["React", "Next.js", "TypeScript", "Python", "PostgreSQL", "AWS"];
-
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -50,18 +48,6 @@ export default function About() {
         </Link>
         .
       </p>
-
-      {/* Tech stack pills */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
-        {stack.map((tech) => (
-          <span
-            key={tech}
-            className="px-3 py-1 text-sm font-medium border-2 border-emerald-500/30 text-emerald-700 bg-emerald-50 dark:border-emerald-400/30 dark:text-emerald-300 dark:bg-emerald-400/10 rounded-lg"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
     </motion.section>
   );
 }

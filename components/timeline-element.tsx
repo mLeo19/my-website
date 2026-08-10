@@ -39,7 +39,7 @@ export default function TimelineElement({ title, location, description, icon, da
         }}
         visible={inView}
       >
-        <h3 className="font-semibold capitalize">{title}</h3>
+        <h3 className="font-semibold capitalize text-emerald-500 dark:text-emerald-400">{title}</h3>
         <p className="font-normal !mt-0">{location}</p>
         <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
           {description}
