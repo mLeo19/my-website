@@ -16,9 +16,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Leonardo Maicelo | Full Stack Developer",
-  description: "Full stack developer specializing in React, Next.js and TypeScript. Available for freelance projects.",
+  title: "Leonardo Maicelo | Freelance Web Developer for Small Businesses",
+  description: "Freelance full stack developer based in South Florida. I build fast, custom websites for small businesses — no templates, just code built to hold up.",
 };
+
 
 export default function RootLayout({
   children,
