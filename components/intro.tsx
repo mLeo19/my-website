@@ -7,14 +7,9 @@ import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
 import Image from 'next/image'
 import Link from 'next/link'
-import { Plus_Jakarta_Sans } from "next/font/google"
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-const headlineFont = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-})
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -60,7 +55,7 @@ export default function Intro() {
 
       {/* Intro headline */}
       <motion.h1
-        className={`${headlineFont.className} mb-2 sm:mb-4 mt-1 sm:mt-3 px-4 text-3xl !leading-[1.25] sm:text-5xl`}
+        className="mb-2 sm:mb-4 mt-1 sm:mt-3 px-4 text-3xl !leading-[1.25] sm:text-5xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -93,7 +88,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 rounded-lg text-white px-7 py-3 flex items-center gap-2 border-2 border-gray-200 dark:border-white/10 outline-none focus:scale-110 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-600 dark:hover:border-emerald-600 active:scale-105 transition-all duration-500 ease-out"
+          className="group bg-gray-900 rounded-sm text-white px-7 py-3 flex items-center gap-2 border-2 border-gray-200 dark:border-white/10 outline-none focus:scale-110 hover:scale-110 hover:bg-emerald-500 hover:border-emerald-400 dark:hover:border-emerald-300 active:scale-105 transition-all duration-500 ease-out"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -103,7 +98,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-transform duration-500" />
         </Link>
         <a
-          className="group bg-white rounded-lg px-7 py-3 flex items-center gap-2 border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:hover:text-emerald-400"
+          className="group bg-white rounded-sm px-7 py-3 flex items-center gap-2 border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:hover:text-emerald-400"
           href="/Resume.pdf"
           download
         >
@@ -111,7 +106,7 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition-transform duration-500" />
         </a>
         <a
-          className="bg-white rounded-lg p-4 text-gray-700 flex items-center gap-2 border-2 border-gray-200 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:text-white/60 dark:hover:text-emerald-400"
+          className="bg-white rounded-full p-4 text-gray-700 flex items-center gap-2 border-2 border-gray-200 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:text-white/60 dark:hover:text-emerald-400"
           href="https://www.linkedin.com/in/leonardo-maicelo/"
           target="_blank"
         >
@@ -119,7 +114,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white rounded-lg p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] border-2 border-gray-200 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:text-white/60 dark:hover:text-emerald-400"
+          className="bg-white rounded-full p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] border-2 border-gray-200 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-500 ease-out cursor-pointer hover:border-emerald-400 dark:hover:border-emerald-400 hover:text-emerald-600 dark:bg-white/10 dark:border-white/10 dark:text-white/60 dark:hover:text-emerald-400"
           href="https://github.com/mLeo19"
           target="_blank"
         >
