@@ -3,7 +3,6 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import velezExpress from '@/public/velez-express.png'
-import javCooling from '@/public/jav-cooling.png'
 import httpServer from '@/public/http-server.png'
 import portfolio from '@/public/portfolio.png'
 import soft17 from '@/public/soft17.png'
@@ -43,14 +42,6 @@ export const links = [
       tags: ["Next.js", "Typescript", "Tailwind", "Stripe"],
       imageUrl: velezExpress,
       href: 'https://www.velezexpressllc.com/'
-    },
-    {
-      title: "JAV Cooling",
-      description:
-        "Business website for an HVAC company, built with a responsive design and Resend API integration for customer contact forms.",
-      tags: ["Next.js", "React", "Tailwind", "Resend API"],
-      imageUrl: javCooling,
-      href: "https://jav-hvac.vercel.app",
     },
     {
       title: "AI Music Generator",
